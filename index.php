@@ -83,6 +83,8 @@ if (isset($_GET['url']) || !empty($argv[1])) {
     }
   
     // This is to create csv file
+    // And also insert data to csv
+    // It insert data very fast
     //---------------------------------------------------------
     //---------------------------------------------------------
 
@@ -122,8 +124,7 @@ if (isset($_GET['url']) || !empty($argv[1])) {
             .
         }
 
-        // If the code is REMOVED, then it will quickly write all the data of all the picture and video in the csv
-        // It write so fast and quick 
+        // If the code is REMOVED, then it will not download the picture or video 
 
     -----------------------------------------------------------------
     */
