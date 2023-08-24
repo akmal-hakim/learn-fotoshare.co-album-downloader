@@ -24,4 +24,26 @@
         </article>
     </section>
 </body>
+    
+<?php
+// Creating a variable with an URL
+// to be checked
+$url = 'https://fotoshare.co/u/kotakphotobooth/3492386';
+  
+// Getting page header data
+$array = @get_headers($url);
+  
+// Storing value at 1st position because
+// that is only what we need to check
+$string = $array[0];
+  
+// 404 for error, 200 for no error
+if(strpos($string, "200")) {
+    echo 'Specified URL Exists';
+} 
+else {
+    echo 'Specified URL does not exist';
+}
+?>
+  
 </html>
